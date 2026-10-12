@@ -6,7 +6,27 @@
 
 **Stack:** Python + FastAPI (backend), HTML/CSS/JS fără framework și fără build (frontend), grafice SVG desenate de mână (fără biblioteci), Claude API (AI).
 
-## Cum se pornește
+## Pornire rapidă
+
+**Varianta 1: în browser, fără instalare.** E nevoie doar de un cont GitHub.
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/madalinas94/finn-analizor-cheltuieli)
+
+Apăsați butonul, apoi **Create codespace**. Opțional, la *Recommended secrets* introduceți cheia Claude în `ANTHROPIC_API_KEY`. După aproximativ 1–2 minute aplicația se deschide singură într-un tab nou. Dacă nu se deschide, mergeți la tabul *Ports* → portul 8000 → 🌐.
+
+**Varianta 2: pe calculatorul dumneavoastră, cu dublu-click.** E nevoie de [Python 3.10+](https://www.python.org/downloads/).
+
+1. Descărcați proiectul: **Code → Download ZIP** (apoi dezarhivați) sau `git clone https://github.com/madalinas94/finn-analizor-cheltuieli`.
+2. Porniți scriptul:
+   - **Windows:** dublu-click pe **`start.bat`**;
+   - **macOS / Linux:** `./start.sh` în terminal.
+3. Scriptul instalează singur pachetele, cere cheia Claude (sau Enter pentru modul fără AI) și deschide **http://localhost:8000**.
+
+În aplicație, apăsați **„Arată-mi cu datele demo”**: se încarcă dintr-un click cele 4 fișiere de test.
+
+Cifră de control pentru verificare: **Mâncare, martie 2026 = 1.259,20 RON** (card + bon, fără dublurile din extras).
+
+## Cum se pornește (manual)
 
 ```bash
 git clone https://github.com/madalinas94/finn-analizor-cheltuieli

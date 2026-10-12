@@ -1,0 +1,15 @@
+{
+  "name": "Finn · Private Money Butler",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "postAttachCommand": "uvicorn backend.main:app --host 0.0.0.0 --port 8000",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": { "label": "Finn", "onAutoForward": "openBrowser" }
+  },
+  "secrets": {
+    "ANTHROPIC_API_KEY": {
+      "description": "Cheia Claude (opțional). Fără ea aplicația rulează în modul local, fără AI."
+    }
+  }
+}
